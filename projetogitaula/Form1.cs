@@ -16,5 +16,16 @@ namespace projetogitaula
         {
             InitializeComponent();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            form2 form2 = new form2();
+            form2.Show();
+        }
     }
 }
