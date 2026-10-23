@@ -9,3 +9,15 @@ C:\Users\Dell\Desktop\trabalhos\projetogitaula\projetogitaula\obj\Debug\projetog
 C:\Users\Dell\Desktop\trabalhos\projetogitaula\projetogitaula\obj\Debug\projetogitaula.csproj.CoreCompileInputs.cache
 C:\Users\Dell\Desktop\trabalhos\projetogitaula\projetogitaula\obj\Debug\projetogitaula.exe
 C:\Users\Dell\Desktop\trabalhos\projetogitaula\projetogitaula\obj\Debug\projetogitaula.pdb
+C:\Users\Dell\Desktop\trabalhos\projetoaula-\projetogitaula\bin\Debug\projetogitaula.exe.config
+C:\Users\Dell\Desktop\trabalhos\projetoaula-\projetogitaula\bin\Debug\projetogitaula.exe
+C:\Users\Dell\Desktop\trabalhos\projetoaula-\projetogitaula\bin\Debug\projetogitaula.pdb
+C:\Users\Dell\Desktop\trabalhos\projetoaula-\projetogitaula\obj\Debug\projetogitaula.csproj.AssemblyReference.cache
+C:\Users\Dell\Desktop\trabalhos\projetoaula-\projetogitaula\obj\Debug\projetogitaula.Form1.resources
+C:\Users\Dell\Desktop\trabalhos\projetoaula-\projetogitaula\obj\Debug\projetogitaula.form2.resources
+C:\Users\Dell\Desktop\trabalhos\projetoaula-\projetogitaula\obj\Debug\projetogitaula.Properties.Resources.resources
+C:\Users\Dell\Desktop\trabalhos\projetoaula-\projetogitaula\obj\Debug\projetogitaula.csproj.GenerateResource.cache
+C:\Users\Dell\Desktop\trabalhos\projetoaula-\projetogitaula\obj\Debug\projetogitaula.csproj.CoreCompileInputs.cache
+C:\Users\Dell\Desktop\trabalhos\projetoaula-\projetogitaula\obj\Debug\projetogitaula.exe
+C:\Users\Dell\Desktop\trabalhos\projetoaula-\projetogitaula\obj\Debug\projetogitaula.pdb
+C:\Users\Dell\Desktop\trabalhos\projetoaula-\projetogitaula\obj\Debug\projetogitaula.Form3.resources
