@@ -12,18 +12,12 @@ namespace projetogitaula
 {
     public partial class Form3 : Form
     {
-        public struct Utilizador
-        {
-            public string nome;
-            public string email;
-            public string senha;
-            public DateTime dataNascimento;
-        }
+        
         public Form3()
         {
             InitializeComponent();
         }
-        Utilizador[] utilizadores = new Utilizador[6];
+       
         bool temNumero = false;
         private void keydown_textbox_1(object sender, KeyEventArgs e)
         {
@@ -49,6 +43,11 @@ namespace projetogitaula
             {
                 
             }
+            globais.Utilizador novoUtilizador;
+            novoUtilizador.email = textBox1.Text;
+            novoUtilizador.senha = textBox2.Text;
+            novoUtilizador.dataNascimento = dateTimePicker1.Value;
+            
         }
     }
 }

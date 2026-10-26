@@ -29,8 +29,6 @@
         private void InitializeComponent()
         {
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -45,23 +43,6 @@
             this.textBox1.Size = new System.Drawing.Size(355, 22);
             this.textBox1.TabIndex = 0;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(624, 162);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(243, 29);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Data de nascimento";
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(562, 213);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(355, 22);
-            this.textBox2.TabIndex = 2;
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -74,7 +55,7 @@
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(562, 334);
+            this.textBox3.Location = new System.Drawing.Point(562, 267);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(355, 22);
             this.textBox3.TabIndex = 4;
@@ -83,7 +64,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(691, 275);
+            this.label3.Location = new System.Drawing.Point(693, 181);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(88, 29);
             this.label3.TabIndex = 5;
@@ -93,7 +74,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(651, 410);
+            this.label4.Location = new System.Drawing.Point(643, 358);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(179, 29);
             this.label4.TabIndex = 6;
@@ -101,7 +82,7 @@
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(562, 482);
+            this.textBox4.Location = new System.Drawing.Point(562, 460);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(355, 22);
             this.textBox4.TabIndex = 7;
@@ -117,8 +98,6 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox1);
             this.Name = "form2";
             this.Text = "form2";
@@ -130,8 +109,6 @@
         #endregion
 
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Label label3;
