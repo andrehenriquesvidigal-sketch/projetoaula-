@@ -1,4 +1,6 @@
-﻿using System;
+﻿using projetogitaula.Execptions;
+using System;
+using System.CodeDom;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,36 +19,69 @@ namespace projetogitaula
         {
             InitializeComponent();
         }
-       
-        bool temNumero = false;
-        private void keydown_textbox_1(object sender, KeyEventArgs e)
+
+        private void button1_Click(object sender, EventArgs e)
         {
-            if(e.KeyCode == Keys.Enter)
+            try
             {
-                
-                foreach(char c in textBox1.Text)
+                if(textBox1.Text == "" || textBox2.Text == "" || textBox4.Text == "")
                 {
-                    if (char.IsDigit(c))
+                    throw new ValidaçãoCamposVaziosExecption("Preencha todos os campos");
+                }
+                if(!textBox2.Text.Contains("@") || !textBox2.Text.Contains("."))
+                {
+                    throw new ValidaçãoEmailException("O email tem de incluir um @ e um .");
+                }
+                for(int i = 0; i < globais.posicaoVazia; i++)
+                {
+                    if (globais.listaUtilizadores[i].email == textBox2.Text)
                     {
-                        temNumero = true;
-                        break;
+                        throw new ValidaçãoEmailException("Este email já está a ser usado");
                     }
                 }
+                if(textBox3.Text != textBox4.Text)
+                {
+                    throw new ValidaçãoPalavraPasseEcxeption("As palavras passe tem de coincidir");
+                }
+                for(int i = 0; i < globais.posicaoVazia; i++)
+                {
+                    if (globais.listaUtilizadores[i].dataNascimento.AddYears(18) >= DateTime.Today)
+                    {
+                        throw new MenorDeIdadeException("Tem que ser maior de idade para prosseguir");
+                    }
+                }
+                globais.Utilizador novoUtilizador;
+                novoUtilizador.nome = textBox1.Text;
+                novoUtilizador.email = textBox2.Text;
+                novoUtilizador.senha = textBox4.Text;
+                novoUtilizador.dataNascimento = dateTimePicker1.Value;
+                globais.listaUtilizadores[globais.posicaoVazia] = novoUtilizador;
+                globais.posicaoVazia++;
+                MessageBox.Show("Registo da conta","A sua conta foi registada com sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                form2 form2 = new form2();
+                form2.Show();
+
             }
-            if (temNumero)
+            catch(ValidaçãoCamposVaziosExecption ex)
             {
-                MessageBox.Show("O texto não pode conter numeros","Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                textBox1.Focus();
-                textBox1.SelectAll();
+                MessageBox.Show(ex.Message, "Validação campos vazios", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            else
+            catch(ValidaçãoEmailException ex)
             {
-                
+                MessageBox.Show(ex.Message, "Validação email", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            globais.Utilizador novoUtilizador;
-            novoUtilizador.email = textBox1.Text;
-            novoUtilizador.senha = textBox2.Text;
-            novoUtilizador.dataNascimento = dateTimePicker1.Value;
+            catch(ValidaçãoPalavraPasseEcxeption ex)
+            {
+                MessageBox.Show(ex.Message, "Validação palavra passe", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            catch(MenorDeIdadeException ex)
+            {
+                MessageBox.Show(ex.Message, "Validação de idade", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
             
         }
     }

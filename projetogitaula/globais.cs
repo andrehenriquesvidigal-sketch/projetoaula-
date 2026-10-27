@@ -15,6 +15,7 @@ namespace projetogitaula
             public string senha;
             public DateTime dataNascimento;
         }
-        Utilizador[] listautilizadores = new Utilizador[50];
+        public static Utilizador[] listaUtilizadores = new Utilizador[50];
+        public static int posicaoVazia = 0;
     }
 }
