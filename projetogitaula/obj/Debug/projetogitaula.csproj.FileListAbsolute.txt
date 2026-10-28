@@ -21,3 +21,4 @@ C:\Users\Dell\Desktop\trabalhos\projetoaula-\projetogitaula\obj\Debug\projetogit
 C:\Users\Dell\Desktop\trabalhos\projetoaula-\projetogitaula\obj\Debug\projetogitaula.exe
 C:\Users\Dell\Desktop\trabalhos\projetoaula-\projetogitaula\obj\Debug\projetogitaula.pdb
 C:\Users\Dell\Desktop\trabalhos\projetoaula-\projetogitaula\obj\Debug\projetogitaula.Form3.resources
+C:\Users\Dell\Desktop\trabalhos\projetoaula-\projetogitaula\obj\Debug\projetogitaula.form4.resources

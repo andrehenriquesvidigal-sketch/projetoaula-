@@ -13,9 +13,12 @@ namespace projetogitaula
             public string nome;
             public string email;
             public string senha;
+            public string caminhoimagem;
             public DateTime dataNascimento;
         }
         public static Utilizador[] listaUtilizadores = new Utilizador[50];
         public static int posicaoVazia = 0;
+        public static int utilizadorAtual = -1;
+        
     }
 }
